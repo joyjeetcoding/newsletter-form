@@ -9,7 +9,7 @@ function App() {
   const closeModal = () => setshowModal(false);
 
   return (
-    <div className="min-h-screen flex bg-white sm:justify-center sm:items-center sm:bg-inherit sm:flex-row-reverse">
+    <div className="min-h-screen flex flex-col bg-white sm:justify-center sm:items-center sm:bg-inherit ">
       <div className="flex flex-col bg-white sm:justify-center sm:items-center sm:rounded-3xl sm:flex-row-reverse sm:max-w-3xl sm:p-10">
         {/* image part */}
         <div className="sm:w-1/2">
@@ -105,6 +105,10 @@ function App() {
           </button>
           {showModal && <Success closeModal={closeModal} />}
         </div>
+      </div>
+      <div className="p-2 font-extrabold sm:text-white flex flex-col justify-center items-center">
+
+      <p>MADE BY </p><a href="https://www.linkedin.com/in/joyjeet-mukherjee-48b298206/" className="hover:text-[#ff6257]  duration-500 hover:scale-105 hover:shadow-2xl" target="_blank" rel="noreferrer">Joyjeet Mukherjee</a>
       </div>
     </div>
   );
